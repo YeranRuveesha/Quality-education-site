@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.topcontainer {
+    border-radius:10px;
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.5rem;;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 30px 0 15px;
+    color: #000000;
+    border-bottom: 2px solid #0f0f0f;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 25px 0 15px;
+    color: black;
+    text-decoration: underline;  
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.nav-container {
+    background-color: #e1e1e1;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    
+}
+
+.page-nav {
+    list-style-type: none;
+}
+
+.page-nav li {
+    margin-bottom: 10px;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: #020202;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.page-nav a:hover {
+    color: #e96161;
+    text-decoration: underline;
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f46464;
+    color: rgb(6, 6, 6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.go-to-top:hover {
+    background-color: #f70000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: block;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.stat-box {
+    flex-basis: 48%;
+    background-color: #dee3de;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.challenge-box {
+    background-color: #f6dcdc;
+    border-left: 5px solid #81807f;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.solution-box {
+    background-color: #e2e2e2;
+    border-left: 5px solid #a9a7a7;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .stat-box {
+        flex-basis: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+}

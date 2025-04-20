@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Education</title>
+    <link rel="stylesheet" href="assets/styles/ST1_1.2.css"> <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/styles/ST1_1.3.css">
+    <script>
+        // Get the target page from session storage (or default to home.html)
+        let targetPage = sessionStorage.getItem("nextPage") || "home.html";
+
+        // Redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = targetPage;
+        }, 2000);
+    </script>
+</head>
+<body>
+    <div class="splash-container">
+        <div class="content">
+            <h1 class="title">Empowering Minds, Building Futures</h1>
+            <p class="mission">Ensuring inclusive and equitable quality education and promoting lifelong learning opportunities.</p>
+            <p class="members">Group Members:<br>Imesh Silva<br>Akash Silva<br>Yeran Srinayaka<br>Matheesha Thalagune</p>
+            <div class="loader"></div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    border-right: 1px solid #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Tooltip for Thumbnails */
+th img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+th img[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Icons within Rows/Columns */
+td .icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Custom Fonts and Colors */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Footer Integration */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 100px; /* Space for logo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the right */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+}
+
+/* Active Page Highlight */
+nav ul li a.active {
+    background-color: #007bff;
+}
+
+/* Logo Size Adjustment */
+.wrapper img {
+    width: 80px; /* Adjust the logo size to 80px */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some spacing below the logo */
+}

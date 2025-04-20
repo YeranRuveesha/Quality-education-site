@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table - Quality Education</title>
+    <link rel="stylesheet" href="assets/styles/ST2_1.1.css"> <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/styles/ST2_1.4.css"> <!-- Table Page Specific CSS -->
+    <script defer src="assets/script.js"></script> <!-- Added JavaScript for interactivity -->
+</head>
+<body>
+    <!-- Logo at the top-left corner -->
+    <div class="logo-container">
+        <img src="assets/images/ST2_logo.png" alt="Quality Education Logo" class="logo">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html" class="active">Table</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <main class="wrapper">
+        <h1>Education Statistics</h1>
+        <img src="assets/images/ST2_logo1.png" alt="Quality Education Logo" class="logo">
+
+        <table id="educationTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">
+                        <img src="assets/images/ST2_image8.png" alt="Country Icon" title="Sort by Country">
+                        Country <span class="sort-arrow">▼</span>
+                    </th>
+                    <th onclick="sortTable(1)">
+                        <img src="assets/images/ST2_image9.png" alt="Literacy Icon" title="Sort by Literacy Rate">
+                        Literacy Rate <span class="sort-arrow">▼</span>
+                    </th>
+                    <th onclick="sortTable(2)">
+                        <img src="assets/images/ST2_image10.png" alt="Enrollment Icon" title="Sort by Enrollment">
+                        School Enrollment <span class="sort-arrow">▼</span>
+                    </th>
+                    <th>Notable Projects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Norway</td>
+                    <td>100%</td>
+                    <td>98%</td>
+                    <td><a href="norway-education.html">Digital Learning Initiative</a> ✔</td>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td title="India has a 74% literacy rate.">74%</td>
+                    <td>85%</td>
+                    <td><a href="india-education.html">National Education Policy</a> ✔</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>95%</td>
+                    <td>90%</td>
+                    <td><a href="germany-education.html">Vocational Training Programs</a> ✔</td>
+                </tr>
+                <tr>
+                    <td>Japan</td>
+                    <td>99%</td>
+                    <td>97%</td>
+                    <td><a href="japan-education.html">STEM Education Initiatives</a> ✔</td>
+                </tr>
+                <tr>
+                    <td>Brazil</td>
+                    <td>93%</td>
+                    <td>88%</td>
+                    <td><a href="brazil-education.html">Literacy Programs</a> ✔</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>99%</td>
+                    <td>96%</td>
+                    <td><a href="canada-education.html">Bilingual Education</a> ✔</td>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>96%</td>
+                    <td>94%</td>
+                    <td><a href="australia-education.html">Indigenous Education Programs</a> ✔</td>
+                </tr>
+                <tr>
+                    <td>South Korea</td>
+                    <td>98%</td>
+                    <td>95%</td>
+                    <td><a href="south-korea-education.html">Digital Classrooms</a> ✔</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>© 2025 Quality Education. <a href="pageEditor_ST2.html">Page Editor</a></p>
+    </footer>
+</body>
+</html>

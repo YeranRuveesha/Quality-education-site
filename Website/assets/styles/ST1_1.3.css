@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Active Page Highlight */
+nav ul li a.active {
+    background-color: #007bff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Changed from fixed to relative */
+    width: 100%;
+    margin-top: 20px; /* Added margin to separate from the content */
+}
+
+/* Wrapper for Centering Content */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Fix for Emoji Cutoff Issue */
+.feedback-form {
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+    margin-bottom: 50px; /* Added extra space at the bottom */
+    position: relative;
+}
+
+.rating-options {
+    margin-top: 10px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 30px; /* Increased padding to prevent cutoff */
+}
+
+.submit {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}

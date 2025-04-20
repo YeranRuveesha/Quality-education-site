@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Quality Feedback</title>
+    <link rel="stylesheet" href="assets/styles/ST3_1.1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Logo at the top-left corner -->
+    <div class="logo-container">
+        <img src="assets/images/ST3_logo.png" alt="Quality Education Logo" class="logo">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section class="form-container">
+            <h1>Education Quality Feedback</h1>
+            <p>Your feedback helps us improve our educational programs and ensure quality learning experiences for all students.</p>
+
+            <form id="feedbackForm" novalidate>
+                <!-- Personal Details Section -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required 
+                               title="Please enter your full name" maxlength="50">
+                        <div class="counter"><span id="nameCounter">50</span> characters remaining</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required 
+                               title="Please enter a valid email address (e.g., name@example.com)">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Telephone Number</label>
+                        <input type="tel" id="telephone" name="telephone" 
+                               pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Education Feedback Section -->
+                <fieldset>
+                    <legend>Education Feedback Details</legend>
+                    <div class="form-group">
+                        <label for="feedbackType">Type of Feedback <span class="required">*</span></label>
+                        <select id="feedbackType" name="feedbackType" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="course">Course Content</option>
+                            <option value="teaching">Teaching Methods</option>
+                            <option value="facilities">Learning Facilities</option>
+                            <option value="support">Student Support</option>
+                            <option value="assessment">Assessment Methods</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="educationPrograms">Programs/Courses You've Participated In</label>
+                        <select id="educationPrograms" name="educationPrograms" multiple size="4">
+                            <option value="stem">STEM Education</option>
+                            <option value="humanities">Humanities</option>
+                            <option value="languages">Language Learning</option>
+                            <option value="vocational">Vocational Training</option>
+                            <option value="arts">Arts & Music</option>
+                            <option value="digital">Digital Literacy</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">Educational Institution</label>
+                        <input list="institutions" id="institution" name="institution">
+                        <datalist id="institutions">
+                            <option value="City Public School">
+                            <option value="Metropolitan University">
+                            <option value="Community College">
+                            <option value="Online Learning Platform">
+                            <option value="Vocational Training Center">
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label>What aspects of education quality are most important to you?</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="qualified" name="quality_aspects" value="qualified">
+                                <label for="qualified">Qualified Teachers</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="curriculum" name="quality_aspects" value="curriculum">
+                                <label for="curriculum">Updated Curriculum</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="technology" name="quality_aspects" value="technology">
+                                <label for="technology">Technology Integration</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="inclusive" name="quality_aspects" value="inclusive">
+                                <label for="inclusive">Inclusive Learning</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Did the education program meet your expectations?</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="exceeded" name="expectations" value="exceeded">
+                                <label for="exceeded">Exceeded expectations</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="met" name="expectations" value="met">
+                                <label for="met">Met expectations</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="below" name="expectations" value="below">
+                                <label for="below">Below expectations</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="educationDate">When did you participate in this program?</label>
+                        <input type="date" id="educationDate" name="educationDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentDateTime">Preferred Follow-up Time (if needed)</label>
+                        <input type="datetime-local" id="appointmentDateTime" name="appointmentDateTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="attachment">Upload Relevant Files (optional)</label>
+                        <input type="file" id="attachment" name="attachment">
+                        <small>Max file size: 5MB (Assignments, Projects, or Documents)</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Rate the Overall Quality of Education <span class="required">*</span></label>
+                        <div class="rating-container">
+                            <div class="rating">
+                                <span class="rating-item" data-value="1"><i class="far fa-star"></i><i class="fas fa-star hidden"></i></span>
+                                <span class="rating-item" data-value="2"><i class="far fa-star"></i><i class="fas fa-star hidden"></i></span>
+                                <span class="rating-item" data-value="3"><i class="far fa-star"></i><i class="fas fa-star hidden"></i></span>
+                                <span class="rating-item" data-value="4"><i class="far fa-star"></i><i class="fas fa-star hidden"></i></span>
+                                <span class="rating-item" data-value="5"><i class="far fa-star"></i><i class="fas fa-star hidden"></i></span>
+                            </div>
+                            <input type="hidden" id="ratingValue" name="rating" required>
+                            <div class="rating-text">Click to rate</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Detailed Feedback <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required maxlength="500" 
+                                  placeholder="Please share your thoughts on the quality of education, teaching methods, learning materials, and any suggestions for improvement."></textarea>
+                        <div class="counter"><span id="messageCounter">500</span> characters remaining</div>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Success Message -->
+    <div id="overlay" class="overlay"></div>
+    <div id="successMessage" class="success-message">
+        <h3><i class="fas fa-check-circle"></i> Thank You!</h3>
+        <p>Your feedback has been submitted successfully.</p>
+        <p>We appreciate your input on improving education quality.</p>
+        <button id="closeSuccessMessage">Close</button>
+    </div>
+
+    <footer>
+        <p>© 2025 Quality Education. <a href="pageEditor_ST3.html">Page Editor</a></p>
+    </footer>
+
+    <script>
+        // Character counter for text inputs
+        document.getElementById('fullName').addEventListener('input', function() {
+            const remaining = 50 - this.value.length;
+            document.getElementById('nameCounter').textContent = remaining;
+        });
+
+        document.getElementById('message').addEventListener('input', function() {
+            const remaining = 500 - this.value.length;
+            document.getElementById('messageCounter').textContent = remaining;
+        });
+
+        // Star rating functionality
+        const ratingItems = document.querySelectorAll('.rating-item');
+        const ratingValue = document.getElementById('ratingValue');
+        const ratingText = document.querySelector('.rating-text');
+
+        ratingItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const value = this.getAttribute('data-value');
+                ratingValue.value = value;
+                
+                // Update stars
+                ratingItems.forEach(star => {
+                    const starValue = star.getAttribute('data-value');
+                    const emptyStar = star.querySelector('.far');
+                    const filledStar = star.querySelector('.fas');
+                    
+                    if (starValue <= value) {
+                        emptyStar.classList.add('hidden');
+                        filledStar.classList.remove('hidden');
+                    } else {
+                        emptyStar.classList.remove('hidden');
+                        filledStar.classList.add('hidden');
+                    }
+                });
+                
+                // Update text based on rating
+                const ratingTexts = [
+                    "Poor", "Fair", "Good", "Very Good", "Excellent"
+                ];
+                ratingText.textContent = ratingTexts[value - 1];
+            });
+        });
+
+        // Form validation
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            let isValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('invalid');
+                    
+                    // Create error message if it doesn't exist
+                    let errorMsg = field.parentElement.querySelector('.error-message');
+                    if (!errorMsg) {
+                        errorMsg = document.createElement('div');
+                        errorMsg.className = 'error-message';
+                        field.parentElement.appendChild(errorMsg);
+                    }
+                    errorMsg.textContent = `This field is required`;
+                } else {
+                    field.classList.remove('invalid');
+                    const errorMsg = field.parentElement.querySelector('.error-message');
+                    if (errorMsg) {
+                        errorMsg.remove();
+                    }
+                }
+                
+                // Email validation
+                if (field.type === 'email' && field.value.trim()) {
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(field.value)) {
+                        isValid = false;
+                        field.classList.add('invalid');
+                        
+                        let errorMsg = field.parentElement.querySelector('.error-message');
+                        if (!errorMsg) {
+                            errorMsg = document.createElement('div');
+                            errorMsg.className = 'error-message';
+                            field.parentElement.appendChild(errorMsg);
+                        }
+                        errorMsg.textContent = `Please enter a valid email address`;
+                    }
+                }
+                
+                // Phone validation
+                if (field.type === 'tel' && field.value.trim()) {
+                    const phonePattern = /^\d{10}$/;
+                    if (!phonePattern.test(field.value)) {
+                        isValid = false;
+                        field.classList.add('invalid');
+                        
+                        let errorMsg = field.parentElement.querySelector('.error-message');
+                        if (!errorMsg) {
+                            errorMsg = document.createElement('div');
+                            errorMsg.className = 'error-message';
+                            field.parentElement.appendChild(errorMsg);
+                        }
+                        errorMsg.textContent = `Please enter a 10-digit phone number`;
+                    }
+                }
+            });
+            
+            if (!isValid) {
+                event.preventDefault();
+            } else {
+                // Show success message
+                event.preventDefault(); // Prevent form submission for demo
+                document.getElementById('overlay').style.display = 'block';
+                document.getElementById('successMessage').style.display = 'block';
+            }
+        });
+
+        // Close success message
+        document.getElementById('closeSuccessMessage').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'none';
+        });
+
+        // Remove error styling on input
+        const formInputs = document.querySelectorAll('input, textarea, select');
+        formInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('invalid');
+                const errorMsg = this.parentElement.querySelector('.error-message');
+                if (errorMsg) {
+                    errorMsg.remove();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

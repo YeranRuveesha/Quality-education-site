@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Logo Container */
+.logo-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001; /* Higher than navigation */
+}
+
+/* Logo Styling */
+.logo {
+    width: 70px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 100px; /* Space for logo */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+}
+
+/* Active Page Highlight */
+nav ul li a.active {
+    background-color: #007bff;
+}
+
+/* Main Content Area */
+main {
+    margin-top: 70px; /* Space for fixed navigation */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 140px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+footer a {
+    color: #8ccbff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .logo-container {
+        top: 5px;
+        left: 5px;
+    }
+    
+    .logo {
+        width: 50px; /* Smaller on mobile */
+    }
+    
+    nav {
+        padding-left: 70px; /* Adjust space for smaller logo */
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+    }
+    
+    nav ul li {
+        margin: 3px 5px;
+    }
+    
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,215 @@
+/* Ensure consistency with gstyles.css */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    background-color: #333;
+}
+nav ul li {
+    margin: 0;
+    padding: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+nav ul li a.active {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.volunteer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+}
+.volunteer-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    min-width: 300px;
+}
+.volunteer-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.volunteer-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.reviews-section {
+    padding: 20px;
+    background: #f4f4f4;
+}
+.review-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.review-card h3 {
+    margin: 0;
+}
+.review-card p {
+    margin: 10px 0;
+}
+.review-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+.review-card a:hover {
+    text-decoration: underline;
+}
+
+.feedback-form {
+    padding: 20px;
+    text-align: center;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.rating-options {
+    margin-top: 10px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.rating-options span {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.rating-options span.selected {
+    color: gold;
+    transform: scale(1.2);
+}
+
+/* New Styles Added for Consistency with gstyles new.css */
+.logo-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001; /* Higher than navigation */
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 100px; /* Space for logo */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+nav ul {
+    justify-content: flex-end; /* Align navigation to the right */
+}
+
+nav ul li a {
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+}
+
+nav ul li a.active {
+    background-color: #007bff;
+}
+
+main {
+    margin-top: 70px; /* Space for fixed navigation */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 140px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+footer a {
+    color: #8ccbff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .logo-container {
+        top: 5px;
+        left: 5px;
+    }
+    
+    .logo {
+        width: 50px; /* Smaller on mobile */
+    }
+    
+    nav {
+        padding-left: 70px; /* Adjust space for smaller logo */
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+    }
+    
+    nav ul li {
+        margin: 3px 5px;
+    }
+    
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}

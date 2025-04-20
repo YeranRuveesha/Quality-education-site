@@ -1,0 +1,289 @@
+/* Home Page Specific Styles */
+
+/* Body with Background Image */
+body {
+    background-image: url('images/background.jpg'); /* Add your image path */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+}
+
+/* Wrapper with Semi-Transparent Background */
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 70px; /* Adjust for fixed navigation bar */
+}
+
+/* Hero Section */
+.wrapper h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Consistent with gstyles.css */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wrapper img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px;
+}
+
+.wrapper p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Why Quality Education Matters Section */
+.why-education {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(249, 249, 249, 0.9); /* Semi-transparent background */
+    margin-bottom: 40px;
+}
+
+.why-education h2 {
+    font-size: 2rem;
+    color: #333; /* Consistent with gstyles.css */
+    margin-bottom: 20px;
+}
+
+.impact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.impact-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.impact-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.impact-item h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Consistent with gstyles.css */
+    margin: 10px 0;
+}
+
+.impact-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Key Facts About Global Education Section */
+.education-stats {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent background */
+    color: white;
+    margin-bottom: 40px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: white;
+    color: #007bff; /* Consistent with gstyles.css */
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-box p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Links to Content Pages Section */
+.content-links {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background */
+    margin-bottom: 40px;
+}
+
+.content-links h2 {
+    font-size: 2rem;
+    color: #333; /* Consistent with gstyles.css */
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #007bff; /* Consistent with gstyles.css */
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* How You Can Help Section */
+.get-involved {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background */
+    margin-bottom: 40px;
+}
+
+.get-involved h2 {
+    font-size: 2rem;
+    color: #333; /* Consistent with gstyles.css */
+    margin-bottom: 20px;
+}
+
+.help-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.help-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #007bff; /* Consistent with gstyles.css */
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.help-card:hover {
+    transform: scale(1.05);
+    background: #007bff; /* Consistent with gstyles.css */
+    color: white;
+}
+
+/* Scroll-to-Top Button Styles */
+#scrollToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #d32f2f; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+#scrollToTop:hover {
+    background: #b71c1c; /* Darker red on hover */
+}
+
+/* Navigation Bar Styles for Larger Screens */
+@media (min-width: 769px) {
+    /* Show the navigation menu by default on larger screens */
+    nav ul {
+        display: flex; /* Show the menu by default */
+        justify-content: flex-end; /* Align menu items to the right */
+    }
+
+    /* Hide the toggle button on larger screens */
+    #menu-toggle {
+        display: none; /* Hide the toggle button on larger screens */
+    }
+}
+
+/* Navigation Bar Styles for Smaller Screens */
+@media (max-width: 768px) {
+    /* Hide the navigation menu by default on smaller screens */
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust based on the height of the navigation bar */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    /* Show the navigation menu when the "active" class is added */
+    nav ul.active {
+        display: flex

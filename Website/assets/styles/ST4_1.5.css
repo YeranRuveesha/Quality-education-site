@@ -1,0 +1,62 @@
+/* Sitemap Page Specific Stylesheet */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+h1 {
+    color: rgb(37, 36, 36);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sitemap-container {
+    min-height: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+.node {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.node:hover rect {
+    fill: #ff6b6b !important;
+}
+
+.node:focus {
+    outline: none;
+}
+
+.node:focus rect {
+    stroke: #0056b3;
+    stroke-width: 3px;
+}
+
+.node text {
+    pointer-events: none;
+}
+
+.link {
+    stroke: #0031a6;
+    stroke-width: 2px;
+    fill: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sitemap-container {
+        padding: 10px;
+    }
+}
