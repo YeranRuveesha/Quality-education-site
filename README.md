@@ -30,11 +30,4 @@ To view the project locally:
 
 No additional setup or installation is required.
 
-## Author
 
-Developed by Yeran Ruveesha Srinayaka  
-GitHub Profile: [@YeranRuveesha](https://github.com/YeranRuveesha)
-
-## License
-
-This project is licensed under the MIT License.
